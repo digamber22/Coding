@@ -13,6 +13,20 @@
 
      “Yes, the worst case commonly happens when the input array is already sorted and the pivot selection is poor,
       such as always picking the first or last element.”
+
+      Partition Step: O(n)
+
+Recursion Depth: O(log n) on average
+
+Total Time Complexity:
+Average: O(n log n)
+Best: O(n log n)
+Worst: O(n²) (poor pivot selection)
+
+Space Complexity:
+Average: O(log n)
+Worst: O(n) (skewed recursion)
+Algorithm Type: In-place, Not Stable, Divide-and-Conquer
 */
 
 
