@@ -8,10 +8,11 @@
   parts back together in a way that maintains sorted order. Because merging two sorted lists is efficient,
    the overall algorithm is very fast and stable. 
    
-   Merge Sort consistently runs in O(n log n) time in all
-    cases — best, average, and worst — and it is widely used when predictable performance is required.
-     However, it needs extra memory for the temporary arrays used during merging, 
-     so its space complexity is O(n).”
+Divide Step: O(log n)
+Merge Step: O(n)
+Total Time Complexity: O(n log n) (best, average, worst)
+Space Complexity: O(n) (uses temporary arrays)
+Algorithm Type: Not In-place, Stable, Divide-and-Conquer
 */
 
 #include <bits/stdc++.h>
