@@ -1,4 +1,16 @@
-//
+/*
+// TC -> O(N^2), SC -> O(1) ; 
+⭐ Interview Answer: What is Bubble Sort?  
+
+“Bubble Sort is a simple comparison-based sorting algorithm where we repeatedly scan 
+through the list and compare adjacent elements. If any two elements are in the wrong 
+order, we swap them. This process continues for multiple passes until the entire list
+ becomes sorted. The reason it's called ‘Bubble Sort’ is because in each pass, the largest 
+ element gradually ‘bubbles up’ to the end of the array, just like a bubble rising to the top. 
+ Even though Bubble Sort is easy to understand and implement, it is inefficient for large datasets 
+ because its worst-case and average time complexity is O(n²). However, it’s commonly used for 
+ teaching the basics of sorting and algorithm analysis.”
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
