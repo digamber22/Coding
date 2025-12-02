@@ -3,14 +3,24 @@ TC -> O(n log n ), SC -> O(1);
 
 ⭐ Interview Answer: What is Heap Sort ?
 
-“Heap Sort is a comparison-based sorting algorithm that uses a special binary tree structure called a heap 
-to efficiently sort elements. The algorithm works in two main steps: First, it builds a max-heap from the
- input array, where the largest element is always at the root. Then, it repeatedly swaps the root with the 
- last element of the heap and reduces the heap size. After each swap, the heap property is restored by heapifying
-  the remaining elements. Over multiple iterations, the largest elements move to the end one by one, eventually
-   producing a fully sorted array. Heap Sort always runs in O(n log n) time, regardless of the input order, 
-   and it works in-place using only O(1) extra space. It is efficient, predictable, but not stable.”
+Heap Sort is a comparison-based sorting algorithm that uses a special binary tree structure called a heap
+ to sort elements efficiently.The algorithm works in mainly two steps : 
 
+Step 1: Build a Max-Heap
+In the beginning, the algorithm converts the entire input array into a max-heap, where the largest element 
+is always at the root of the heap. This structure helps us easily access the maximum value in constant time.
+
+Step 2: Repeatedly Remove the Maximum & Restore Heap
+Once the max-heap is built, the algorithm starts sorting by swapping the root (largest element) with the last
+ element of the heap. After this swap, the heap size is reduced by one since the last element is now in its
+ correct sorted position.
+To maintain the heap property, the algorithm then heapifies the remaining elements—this ensures that the 
+next largest element moves to the root.
+
+This process is repeated again and again. Each iteration places the next largest element at the end of the 
+array, slowly forming the sorted sequence.
+
+Over these repeated operations, all elements eventually move to their correct positions, producing a fully sorted array.
 
  Build Heap: O(n)
  Heapify each time: O(log n)
